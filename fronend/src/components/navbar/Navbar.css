@@ -1,0 +1,161 @@
+.navbar {
+background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    display: none;
+  }
+
+  .navbar-toggle {
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-toggle-icon::before,
+  .navbar-toggle-icon::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-toggle-icon::before {
+    top: -6px;
+  }
+
+  .navbar-toggle-icon::after {
+    top: 6px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar-collapse.active .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-collapse.active .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-collapse.active .nav-item::before {
+    content: none;
+  }
+
+  .navbar-toggle.active .navbar-toggle-icon {
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggle.active .navbar-toggle-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .navbar-toggle.active .navbar-toggle-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

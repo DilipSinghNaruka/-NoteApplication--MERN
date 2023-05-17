@@ -1,0 +1,104 @@
+/* Default styles for card */
+/* .card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  margin: 4%;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 16px;
+} */
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  .task-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .task-list-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .i{
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px; 
+  margin: 4%;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list-item {
+  width: calc(33.33% - 10px); 
+  margin-bottom: 20px;
+}
+.i{
+    cursor: pointer;
+    padding-left: 1rem;
+}

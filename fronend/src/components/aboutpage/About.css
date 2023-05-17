@@ -1,0 +1,64 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-title {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-button {
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+    height: auto;
+  }
+
+  .about-content {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .about-button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}

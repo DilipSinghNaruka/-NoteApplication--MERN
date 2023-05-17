@@ -1,0 +1,7 @@
+i complete ui part in frondend part --> 19 april 2023
+
+#43 tak done hai db se connect kar diya 
+
+backend is ready now start frontend 25 april 2023
+
+its complete now in this dont have edit note button and responsive navbar
